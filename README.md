@@ -115,6 +115,7 @@ body,html{
 ![output](./static/images/mob.jpg)
 ![output](./static/images/tablet.png)
 ![output](./static/images/admin.png)
+![output](./static/images/valid.png)
 
 
 ## RESULT:
