@@ -109,14 +109,14 @@ body,html{
     margin-right: auto;
 }
 ```
+## VALIDATOR:
+![output](./static/images/valid.png)
 
 ## OUTPUT:
 ![output](./static/images/resp.png)
 ![output](./static/images/mob.jpg)
 ![output](./static/images/tablet.png)
 ![output](./static/images/admin.png)
-![output](./static/images/valid.png)
-
 
 ## RESULT:
 Thus a website is designed  a responsive website with two break points. 
