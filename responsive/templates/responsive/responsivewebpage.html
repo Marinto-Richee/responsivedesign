@@ -1,30 +1,3 @@
-# Design of Responsive Website
-## AIM:
-To design a responsive website with two break points.
-
-## DESIGN STEPS:
-### Step 1: 
-Requirement collection.
-### Step 2:
-Creating the layout using HTML and CSS.
-### Step 3:
-Updating the sample content.
-### Step 4:
-Choose the appropriate style and color scheme.
-### Step 5:
-Validate the layout in various browsers.
-### Step 6:
-Validate the HTML code.
-### Step 7:
-Create a database model and migrate the database.
-### Step 8:
-Retrieve data from database and display it in a dynamic webpage.
-### Step 9:
-Publish the website in the given URL.
-
-## PROGRAM:
-### RESPONSIVEWEBPAGE.HTML:
-```
 {% load static %}
 <!doctype html>
 <html lang="en">
@@ -66,42 +39,3 @@ Publish the website in the given URL.
         crossorigin="anonymous"></script>
 </body>
 </html>
-```
-### MODELS.PY:
-```
-from django.db import models
-from django.contrib import admin
-
-# Create your models here.
-class colours(models.Model):
-    colour= models.CharField(max_length=200)
-    colourcode= models.CharField(max_length=600)
-
-class coloursAdmin(admin.ModelAdmin):
-    list_display=('colour','colourcode')
-```
-### RESPONSIVE.CSS:
-```
-*{
-      box-sizing: border-box;
-      font-family: 'Arial Narrow';
-      color: #0b0c10;
-      
-}
-body,html{
-    padding: 5px;
-    color: #6C5B7B ;
-    background-color: #F8B195     ;
-}
-.container{
-    width: 80%;
-    margin-left: auto;
-    margin-right: auto;
-}
-```
-
-## OUTPUT:
-![output](./static/images/resp.png)
-## RESULT:
-Thus a website is designed  a responsive website with two break points. 
-URL http://marinto.student.saveetha.in:8000/responsive/.
