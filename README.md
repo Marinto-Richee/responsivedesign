@@ -80,6 +80,16 @@ class colours(models.Model):
 class coloursAdmin(admin.ModelAdmin):
     list_display=('colour','colourcode')
 ```
+### VIEWS.PY:
+```
+from django.shortcuts import render
+from .models import colours
+# Create your views here.
+def responsiveweb(request):
+    context={}
+    context["colour"]= colours.objects.all()  
+    return render(request,'responsive/responsivewebpage.html',context)
+```
 ### RESPONSIVE.CSS:
 ```
 *{
@@ -102,6 +112,11 @@ body,html{
 
 ## OUTPUT:
 ![output](./static/images/resp.png)
+![output](./static/images/mob.jpg)
+![output](./static/images/tablet.png)
+![output](./static/images/admin.png)
+
+
 ## RESULT:
 Thus a website is designed  a responsive website with two break points. 
 URL http://marinto.student.saveetha.in:8000/responsive/.
